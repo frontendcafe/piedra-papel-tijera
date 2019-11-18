@@ -1,15 +1,33 @@
 {
-  "name": "server",
+  "name": "piedra-papel-tijera",
   "version": "1.0.0",
-  "description": "",
+  "description": "Servidor del proyectito piedra papel o tijera <3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "link-module-alias",
+    "dev": "nodemon index.js",
+    "tests": "node modules/tests/index.js"
+  },
+  "_moduleAliases": {
+    "~modules": "./modules",
+    "~components": "./components",
+    "~root": "."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "socket.io": "^2.3.0"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "helmet": "^3.18.0",
+    "morgan": "^1.9.1",
+    "rc": "^1.2.8"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "link-module-alias": "^1.2.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
   }
 }
