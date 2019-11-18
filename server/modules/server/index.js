@@ -1,4 +1,4 @@
-const config = require('~modules/config');
+const config = require('../config/conf');
 const express = require('express');
 const http = require('http');
 const cors = require('cors')
@@ -23,6 +23,7 @@ app.use(cors({
     origin: 'http://localhost:4200',
     optionsSuccessStatus: 200 
 }))
+console.log(`esto?`);
 
 module.exports = {
     router: app,
