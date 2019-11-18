@@ -21,7 +21,7 @@ class Boton extends React.Component {
     }
 
     return (
-        <img src={} />
+        <div>RETURN</div>
     );
   }
 }
