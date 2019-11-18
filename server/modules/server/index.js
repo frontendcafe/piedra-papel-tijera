@@ -9,6 +9,10 @@ const helmet = require('helmet');
 
 const app = express();
 const server = http.createServer(app);
+const socketIO = require('socket.io');
+
+module.exports.io = socketIO(server);
+require('./serverSocket');
 
 app.use(helmet())
 app.use(bodyParser.urlencoded({extended:true}))
