@@ -7,7 +7,8 @@
 
 module.exports = require('rc')('echo', {
     server: {
-      port: 8080
+      port: 8080,
+      origin:'http://localhost:4200'
     }
 });
 

@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 
 app.use(cors({
-    origin: 'http://localhost:4200',
+    origin: config.server.origin,
     optionsSuccessStatus: 200 
 }))
 console.log(`esto?`);
