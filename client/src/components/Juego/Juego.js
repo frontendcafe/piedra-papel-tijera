@@ -1,8 +1,8 @@
 import React from "react";
 import "./Juego.css";
-import Boton from "./Boton";
+import Boton from "./Button";
 
-export default class Juego extends React.Component {
+class Juego extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,3 +30,5 @@ export default class Juego extends React.Component {
     );
   }
 }
+
+export default Juego;

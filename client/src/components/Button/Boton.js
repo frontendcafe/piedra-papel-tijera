@@ -1,7 +1,7 @@
 import React from "react";
-import "./Boton.css";
+import "./style.scss";
 
-export default class Boton extends React.Component {
+class Boton extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -25,3 +25,5 @@ export default class Boton extends React.Component {
     );
   }
 }
+
+export default Boton;
