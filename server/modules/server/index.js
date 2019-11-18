@@ -1,4 +1,4 @@
-const config = require('../config/conf');
+const config = require('~modules/config');
 const express = require('express');
 const http = require('http');
 const cors = require('cors')
@@ -9,10 +9,6 @@ const helmet = require('helmet');
 
 const app = express();
 const server = http.createServer(app);
-const socketIO = require('socket.io');
-
-module.exports.io = socketIO(server);
-require('./serverSocket');
 
 app.use(helmet())
 app.use(bodyParser.urlencoded({extended:true}))
@@ -20,10 +16,9 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 
 app.use(cors({
-    origin: config.server.origin,
+    origin: 'http://localhost:4200',
     optionsSuccessStatus: 200 
 }))
-console.log(`esto?`);
 
 module.exports = {
     router: app,
