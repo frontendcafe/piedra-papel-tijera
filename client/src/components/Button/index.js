@@ -1,7 +1,6 @@
-import React from "react";
-import "./style.scss";
+import React, {Component} from "react";
 
-class Boton extends React.Component {
+class Boton extends Component {
   constructor(props) {
     super(props);
   }

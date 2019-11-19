@@ -1,7 +1,7 @@
-import React from "react";
+import React, {Component} from "react";
 import Boton from "../Button";
 
-class Juego extends React.Component {
+class Juego extends Component {
   constructor(props) {
     super(props);
     this.state = {

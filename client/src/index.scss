@@ -1,0 +1,14 @@
+@import './styles/var';
+@import './styles//mixins';
+
+@import './styles/sass/Header';
+
+body{
+    background-image: $bg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: $mainFont;
+    max-width: $desktop;
+    margin: 0 auto;
+}

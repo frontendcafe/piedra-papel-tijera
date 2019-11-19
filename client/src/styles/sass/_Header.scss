@@ -1,0 +1,48 @@
+.header {
+  height: 10rem;
+  width: 60%;
+  margin: 2rem auto;
+  border: 2px solid $headerOutline;
+  border-radius: 10px;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .title {
+      h4 {
+        color: #eee;
+        margin: 0;
+        padding: 0 1.5rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+    }
+
+    .score {
+      background-color: white;
+      padding: 1.5rem 3rem;
+      margin: 0 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+
+      .counter-title {
+        h4 {
+          font-size: 1.2rem;
+          margin: 0;
+          text-transform: uppercase;
+
+        }
+      }
+
+      .counter-number {
+        h2 {
+          font-size: 2.2rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
