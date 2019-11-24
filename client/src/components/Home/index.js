@@ -1,10 +1,11 @@
 import React from 'react';
+import Juego from '../Juego';
 
 class Home extends React.Component {
   render() {
     return (
       <div>
-        Home
+        <Juego jugador="Santiago Santana"/>
       </div>
     );
   }

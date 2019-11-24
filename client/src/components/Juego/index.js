@@ -1,6 +1,5 @@
 import React from "react";
-import "./Juego.css";
-import Boton from "./Button";
+import Boton from "../Button";
 
 class Juego extends React.Component {
   constructor(props) {
@@ -24,7 +23,7 @@ class Juego extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hola, {this.props.nombreJugador}!</h1>
+        <h1>Hola, {this.props.jugador}!</h1>
         {this.renderBoton(this.state.eleccionJugador)}
       </div>
     );

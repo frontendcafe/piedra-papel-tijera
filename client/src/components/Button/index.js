@@ -9,7 +9,7 @@ class Boton extends React.Component {
   render() {
     let img = "";
 
-    switch (this.props.eleccionJugada) {
+    switch (this.props.eleccion) {
         case "piedra":
             break;
         case "tijera":
@@ -21,7 +21,7 @@ class Boton extends React.Component {
     }
 
     return (
-        <img src={} />
+        <div>RETURN</div>
     );
   }
 }
