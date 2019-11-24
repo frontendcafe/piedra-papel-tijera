@@ -1,13 +1,14 @@
-import React from 'react';
+import React from "react";
 
-class Score extends React.Component {
-  render() {
-    return (
-      <div>
-        Score
+const Score = ({score}) => {
+
+  return(
+    <React.Fragment>
+      <div className="counter-title">
+        <h4>{score}</h4>
       </div>
-    );
-  }
-}
+    </React.Fragment>
+  )
+};
 
 export default Score;

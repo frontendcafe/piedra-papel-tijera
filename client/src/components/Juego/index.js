@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Boton from "../Button";
+// import Boton from "../Button";
 
 class Juego extends Component {
   constructor(props) {
@@ -12,20 +12,9 @@ class Juego extends Component {
     };
   }
 
-  renderBoton(eleccion) {
-    return (
-      <Boton
-        eleccion={eleccion}
-      />
-    );
-  }
-
   render() {
     return (
-      <div>
-        <h1>Hola, {this.props.jugador}!</h1>
-        {this.renderBoton(this.state.eleccionJugador)}
-      </div>
+      <div>asd</div>
     );
   }
 }

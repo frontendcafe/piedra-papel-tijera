@@ -1,6 +1,50 @@
 import React from "react";
 
-// class Header extends React.Component {
+import Score from '../Score';
+import Boton from '../Button';
+// import Counter from '../Counter';
+
+const Header = (props) => {
+
+  const {title, counter} = props;
+
+  return (
+
+    <header className="header">
+      <div className="header-container">
+        <div className="title">
+          <h4>{title}</h4>
+          <h4>Paper</h4>
+          <h4>Scissors</h4>
+          <h4>Lizard</h4>
+          <h4>Spock</h4>
+        </div>
+
+        <div className="score">
+
+          <Score score = "Score" />
+
+          <div className="counter-number">
+            <h2>{counter}</h2>
+            {/* <Boton /> */}
+          </div>
+
+          
+        </div>
+      </div>
+    </header>
+  );
+};
+
+
+
+// class Header extends Component {
+
+//   state = {
+//     nombre: '',
+//     apellido: ''
+//   }
+
 //   render() {
 //     return (
 //       <div>
@@ -9,31 +53,5 @@ import React from "react";
 //     );
 //   }
 // }
-
-const Header = () => {
-  return (
-    <header className="header">
-      <div className="header-container">
-        <div className="title">
-          <h4>Rock</h4>
-          <h4>Paper</h4>
-          <h4>Scissors</h4>
-          <h4>Lizard</h4>
-          <h4>Spock</h4>
-        </div>
-
-        <div className="score">
-          <div className="counter-title">
-            <h4>Score</h4>
-          </div>
-
-          <div className="counter-number">
-            <h2>12</h2>
-          </div>
-        </div>
-      </div>
-    </header>
-  );
-};
 
 export default Header;
