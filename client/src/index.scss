@@ -1,0 +1,16 @@
+@import './styles/var';
+@import './styles//mixins';
+
+@import './styles/sass/Header';
+@import './styles/sass/Rules';
+
+body{
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: $mainFont;
+    max-width: $desktop;
+    margin: 0 auto;
+}
+

@@ -4,7 +4,16 @@ import "./style.scss";
 class Boton extends React.Component {
   constructor(props) {
     super(props);
+    this.state={
+      // eleccion=""
+    }
   }
+
+  handleClick(e){
+   console.log(this.props.eleccion) 
+
+  }
+
 
   render() {
     let img = "";
@@ -21,7 +30,8 @@ class Boton extends React.Component {
     }
 
     return (
-        <div>RETURN</div>
+
+        <button className="button-option" onClick={(e)=>this.handleClick(e)}>RETURN OPCIONES</button>
     );
   }
 }

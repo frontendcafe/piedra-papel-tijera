@@ -1,11 +1,18 @@
 import React from 'react';
+import "./style.scss"
 
 class Rules extends React.Component {
+  handleClick(){
+
+  }
+
+
+  
   render() {
     return (
-      <div>
-        Rules
-      </div>
+      <button className="button-rules" onClick={()=> this.handleClick()}>
+        RULES
+      </button>
     );
   }
 }
